@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header />
 
-    <GridList/>
+    <GridList />
   </div>
 </template>
 
@@ -50,7 +50,16 @@ body {
 
 .grid__item {
   margin: 0 10px 20px;
+
   flex: 1 1 290px;
+}
+.modal {
+  position: relative;
+  padding: 20px;
+}
+.vm--modal {
+  width: 100%;
+  height: 100%;
 }
 
 /* card */
@@ -66,7 +75,16 @@ body {
 .card:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
-
+.card__header {
+  display: grid;
+  grid-template: 'min-content' /95% 5%;
+}
+.close {
+  right: 1%;
+  top: 5%;
+  position: absolute;
+  margin: auto;
+}
 .card__body {
   width: 100%;
   height: 215px;

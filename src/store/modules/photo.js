@@ -1,6 +1,6 @@
 import PhotoService from '@/services/PhotoService'
 import partials from '../partials'
-/* eslint-disable */ 
+
 export const namespaced = true
 
 export const state = {
