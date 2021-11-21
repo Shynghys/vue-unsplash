@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style>
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 
 * {
   box-sizing: border-box;
@@ -57,9 +57,8 @@ body {
   position: relative;
   padding: 20px;
 }
-.vm--modal {
-  width: 100%;
-  height: 100%;
+.vm--overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 /* card */
@@ -106,10 +105,11 @@ body {
 .card__likes {
   float: right;
   color: #ea4c89;
-  font-size: 13px;
+  font-size: 19px;
 }
 
 .card__date {
+  margin-right: 20px;
   font-family: Courier, serif;
   font-size: 13px;
   color: #999;
@@ -125,6 +125,9 @@ body {
 }
 
 .media__body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   min-height: 32px;
   line-height: 32px;

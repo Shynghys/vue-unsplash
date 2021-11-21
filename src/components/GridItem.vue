@@ -1,9 +1,7 @@
 <template>
   <div class="grid__item card">
     <div class="card__body">
-      <!-- <a :href="photo.links.download" target="_blank"> -->
       <img :src="photo.urls.regular" :alt="photo.description" />
-      <!-- </a> -->
     </div>
   </div>
 </template>

@@ -1,18 +1,6 @@
 <template>
   <div>
-    <modal
-      name="modal"
-      class="modal"
-      :height="500"
-      :width="800"
-      resaziable
-      :adaptive="true"
-    >
-      <button type="button" class="close" aria-label="Close" @click="hide">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <modal-item :photo="currentPhoto"
-    /></modal>
+    <modal-item :photo="currentPhoto" />
 
     <div class="filters">
       <label for="sort">Sort by</label>
@@ -35,6 +23,7 @@
         :key="photo.id"
         :photo="photo"
         @click.native="showModal(photo)"
+        v-b-modal.modal-1
       />
     </div>
     <Pagination @onPageChanged="fetchPhotos" />
@@ -64,8 +53,8 @@ export default {
   },
   methods: {
     showModal(photo) {
-      console.log('aa')
       this.currentPhoto = photo
+      console.log('aa', this.currentPhoto)
       this.$modal.show('modal')
     },
     hide() {
