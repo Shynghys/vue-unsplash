@@ -13,9 +13,6 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
-import vmodal from 'vue-js-modal'
-
-Vue.use(vmodal)
 Vue.config.productionTip = false
 
 new Vue({

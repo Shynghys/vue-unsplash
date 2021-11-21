@@ -8,3 +8,5 @@ $ npm install
 $ npm run serve
 
 ```
+
+libraries used: axios, bootstrap
